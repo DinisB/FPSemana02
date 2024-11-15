@@ -1,4 +1,4 @@
-frase = input().lower()
+frase = input()
 
 letras = {}
 
