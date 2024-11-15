@@ -1,4 +1,4 @@
-frase = input()
+frase = input().lower()
 
 letras = {}
 
@@ -9,6 +9,7 @@ for letter in frase:
     else:
         letras[letter] = 1
 
-letras.pop(' ')
+if ' ' in letras:
+    letras.pop(' ')
 
 print(letras)
